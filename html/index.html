@@ -1,0 +1,216 @@
+<html>
+<h1>New Spell Submission Form</h1>
+<h3>Please enter your spell details below.  Fields marked with an asterix (*) are required</h3>
+
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="spell_name">Spell Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="spell_name" maxlength="50" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label>Spell Level *</label>
+ </td>
+ <td valign="top">
+<select name="spell_level">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+</select>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label>Spell School *</label>
+ </td>
+ <td valign="top">
+<form>
+  <input type="checkbox" name="Correspondence" value="Correspondence ">Correspondence<br>
+  <input type="checkbox" name="Entropy" value="Entropy ">Entropy<br>
+  <input type="checkbox" name="Force" value="Force ">Force<br>
+  <input type="checkbox" name="Life" value="Life ">Life<br>
+  <input type="checkbox" name="Matter" value="Matter ">Matter<br>
+  <input type="checkbox" name="Mind" value="Mind ">Mind<br>
+  <input type="checkbox" name="Prime" value="Prime ">Prime<br>
+  <input type="checkbox" name="Spirit" value="Spirit ">Spirit<br>
+  <input type="checkbox" name="Time" value="Time ">Time<br>
+</form>
+ </td>
+</tr>
+
+
+<tr>
+ <td valign="top">
+  <label for="spell_description">Spell Description *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="spell_description" maxlength="1000" cols="32" rows="6"></textarea>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="mc">Material Component</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="mc" maxlength="80" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="range">Spell Range *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="range" maxlength="80" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="target">Spell Target *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="target" maxlength="80" size="30">
+ </td>
+</tr>
+
+
+<tr>
+ <td valign="top">
+  <label for="duration">Spell Duration</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="duration" maxlength="80" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label>Spell Casting Time *</label>
+ </td>
+ <td valign="top">
+<select name="casttime">
+  <option value="Standard">Standard</option>
+  <option value="Swift">Swift</option>
+  <option value="Immediate">Immediate</option>
+  <option value="Free">Free</option>
+</select>
+ </td>
+</tr>
+
+
+<tr>
+ <td valign="top">
+  <label>Targeted Defence *</label>
+ </td>
+ <td valign="top">
+<select name="targeteddefence">
+  <option value="Will">Will</option>
+  <option value="Reflex">Reflex</option>
+  <option value="Fortitude">Fortitude</option>
+  <option value="Will Partial">Will Partial</option>
+  <option value="Reflex Partial">Reflex Partial</option>
+  <option value="Fortitude Partial">Fortitude Partital</option>
+  <option value="AC">AC</option>
+  <option value="Touch AC">Touch AC</option>
+  <option value="Spell Modification">Spell Modification</option>
+  <option value="None">None</option>
+</select>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label>Spell Travel Time *</label>
+ </td>
+ <td valign="top">
+<select name="tt">
+  <option value="Creeping">Creeping</option>
+  <option value="Slow">Slow</option>
+  <option value="Normal" selected="selected">Normal</option>
+  <option value="Fast">Fast</option>
+  <option value="Near Instant">Near Instant</option>
+  <option value="Instant">Instant</option>
+</select>
+ </td>
+</tr>
+
+
+<tr>
+ <td valign="top">
+  <div class="tooltip">
+   <label for="email">Email Address</label>
+   <span class="tooltiptext">Enter an email address if you want to be notified when your spell is added to Realmworks.</span>
+  </div>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+
+<tr>
+ <td valign="top"">
+  <label for="name">Your Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="name" maxlength="50" size="30">
+ </td>
+</tr>
+
+
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">
+ </td>
+</tr>
+</table>
+</form>
+
+
+</body>
+<footer>
+  <p><a href="reportabug.html">Click here to report a bug</a></p>
+</footer>
+</html>
