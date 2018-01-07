@@ -1,1 +1,1 @@
-Just a test repo for auto builds with Docker
+Spell Submission Tool for a proprietary TTRPG Game
